@@ -3,18 +3,21 @@ import logo from '../logo.svg';
 function Storage() {
     return (
       <div class="app bg-violet-200">
-    
-       <h1 class="text-3xl font-bold text-center text-indigo-700">Storage Services</h1>
+       <h1 class="text-3xl font-bold text-center text-indigo-700 mb-10 pt-10">Storage Services</h1>
 
-       
-       <div class="flex items-center">
+       <div class="grid grid-cols-4 gap-4 ">
         {[
-            ['Name', 'desc on what this does'],
+            ['S3', 'durable object store. files stored in buckets with globally unique names.  There is virturally unlimited storage.'],
+            ['S3 Standard', '99.99% Avalibility and 11 9s of duribility. >= 3 AZs.  Standard is the main, basic level of storage.'],
+            ['S3 Infrequent Access', '99.9% Avalibility and 11 9s of duribility. >= 3 AZs.  Use for long-term strage, backups, and critical datea.'],
+            ['S3 One Zone', '99.5% Avalibility and 11 9s of duribility. 1 AZs.  Use for non-critical data'],
+            ['S3 Glacier', '99.99% Avalibility and 11 9s of duribility. 1 AZs.  infrequently accessed date. Can take up to 12 hours for retrieval'],
+            
 
         ].map(([name, desc]) => (
-            <div class="p-6 max-w-sm mx-auto bg-violet-50 rounded-xl shadow-lg flex items-center space-x-4 h-52 w-96 m-6">
+            <div class="p-6 bg-violet-50 rounded-xl shadow-lg flex items-center space-x-4 h-52 w-96 m-auto">
             <div class="shrink-0">
-              <img class="h-12 w-12" src={logo} alt="ChitChat Logo" />
+              <img class="h-12 w-12" src={logo} alt="Logo" />
             </div>
             <div>
               <div class="text-xl font-medium text-purple-900">{name}</div>
