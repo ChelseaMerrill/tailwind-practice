@@ -4,7 +4,7 @@ function Security() {
     return (
       <div class="app bg-violet-200">
     
-       <h1 class="text-3xl font-bold text-center text-indigo-700">Security Services</h1>
+       <h1 class="text-3xl font-bold text-center text-indigo-700 mb-10 pt-10">Security Services</h1>
 
        
 

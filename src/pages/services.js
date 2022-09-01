@@ -4,7 +4,7 @@ function Services() {
     return (
       <div class="app bg-violet-200">
     
-       <h1 class="text-3xl font-bold text-center text-indigo-700">Application Services</h1>
+       <h1 class="text-3xl font-bold text-center text-indigo-700 mb-10 pt-10">Application Services</h1>
 
   
 
